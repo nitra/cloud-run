@@ -255,7 +255,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nitra/check-env@npm:^2.0.5, @nitra/check-env@npm:^2.0.7":
+"@nitra/check-env@npm:^2.0.5":
   version: 2.0.7
   resolution: "@nitra/check-env@npm:2.0.7"
   checksum: 0927e441e9e7bc7c3f692d91e36daac9e3d281a4b4ea96a72ec1063e64a74e5f72af83a76fafa674e4ee32403deff9b5476b163b2d8efffc5cdafeb8c6eb9632
@@ -979,7 +979,6 @@ __metadata:
   resolution: "demo@workspace:demo"
   dependencies:
     "@nitra/bunyan": ^1.3.0
-    "@nitra/check-env": ^2.0.7
     "@nitra/cloud-run": "workspace:^"
     "@nitra/eslint-config": ^1.0.22
   languageName: unknown
