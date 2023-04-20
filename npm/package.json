@@ -1,0 +1,25 @@
+{
+  "name": "@nitra/cloud-run",
+  "description": "cloud-run helper",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "nitra",
+    "cloud-run"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nitra/cloud-run.git"
+  },
+  "bugs": "https://github.com/nitra/cloud-run/issues",
+  "homepage": "https://github.com/nitra/cloud-run",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/run": "^0.4.2",
+    "@nitra/check-env": "^2.0.5"
+  }
+}
