@@ -1,7 +1,7 @@
 {
   "name": "@nitra/cloud-run",
   "description": "cloud-run helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "main": "src/index.js",
   "files": [
@@ -20,6 +20,6 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/run": "^0.4.2",
-    "@nitra/check-env": "^2.0.5"
+    "@nitra/gcp-metadata": "^1.0.2"
   }
 }

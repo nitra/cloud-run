@@ -22,11 +22,11 @@ jobs:
         with:
           node-version: 18
 
-      - uses: JS-DevTools/npm-publish@v1
+      - uses: JS-DevTools/npm-publish@v2
         with:
           token: ${{ secrets.NPM_TOKEN }}
           access: public
-          check-version: true
+          strategy: upgrade
           package: ./npm/package.json
 
       - name: get-npm-version

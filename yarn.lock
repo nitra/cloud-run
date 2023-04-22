@@ -255,19 +255,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nitra/check-env@npm:^2.0.5":
-  version: 2.0.7
-  resolution: "@nitra/check-env@npm:2.0.7"
-  checksum: 0927e441e9e7bc7c3f692d91e36daac9e3d281a4b4ea96a72ec1063e64a74e5f72af83a76fafa674e4ee32403deff9b5476b163b2d8efffc5cdafeb8c6eb9632
-  languageName: node
-  linkType: hard
-
 "@nitra/cloud-run@workspace:^, @nitra/cloud-run@workspace:npm":
   version: 0.0.0-use.local
   resolution: "@nitra/cloud-run@workspace:npm"
   dependencies:
     "@google-cloud/run": ^0.4.2
-    "@nitra/check-env": ^2.0.5
+    "@nitra/gcp-metadata": ^1.0.2
   languageName: unknown
   linkType: soft
 
@@ -293,6 +286,15 @@ __metadata:
     eslint-plugin-security: ^1.5.0
     eslint-plugin-vue: ^9.6.0
   checksum: 3d015dd11e055b2d7d60a739e884f604ed6ef80de43e0bbba030924fa1d7cf23caabe5957839c22887938f291d1c67411464bdfde0c1f445574635270abe00ed
+  languageName: node
+  linkType: hard
+
+"@nitra/gcp-metadata@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@nitra/gcp-metadata@npm:1.0.2"
+  dependencies:
+    gcp-metadata: ^5.2.0
+  checksum: ef436bd8a66900f270309fca4c7693110be0d7d5014d9b1060ef7fde5fbbfb75d5aff9a6dbedca68da7f1ff0b40b67e7aeba68bed77965527ebf04d9c9204c91
   languageName: node
   linkType: hard
 
@@ -1787,7 +1789,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gcp-metadata@npm:^5.0.0":
+"gcp-metadata@npm:^5.0.0, gcp-metadata@npm:^5.2.0":
   version: 5.2.0
   resolution: "gcp-metadata@npm:5.2.0"
   dependencies:

@@ -1,11 +1,11 @@
-import checkEnv from '@nitra/check-env'
 import { v2 } from '@google-cloud/run'
+import { getProjectInfo } from '@nitra/gcp-metadata'
 
-checkEnv(['PROJECT_ID', 'REGION'])
+const { projectId, region } = await getProjectInfo()
 
 const runClient = new v2.JobsClient()
-const gPath = `projects/${process.env.PROJECT_ID}/locations/${process.env.REGION}`
-const connector = `${gPath}/connectors/${process.env.REGION}-vpc`
+const gPath = `projects/${projectId}/locations/${region}`
+const connector = `${gPath}/connectors/${region}-vpc`
 
 /**
  * Оновлює job
