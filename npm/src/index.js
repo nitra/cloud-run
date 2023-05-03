@@ -18,7 +18,7 @@ const connector = `${gPath}/connectors/${region}-vpc`
  */
 export async function updateJob(jobName, log, env = [], taskCount = 1) {
   const name = `${gPath}/jobs/${jobName}`
-  log.debug('update Job name: ', name)
+  log.info('update Job name: ', name, env, taskCount)
 
   // Поточні налаштування сервісу
   const jobTemplate = await runClient.getJob({ name })
@@ -85,8 +85,7 @@ export async function updateJob(jobName, log, env = [], taskCount = 1) {
  */
 export async function executeJob(jobName, log) {
   const name = `${gPath}/jobs/${jobName}`
-  log.debug('execute Job name: ', name)
-  console.log('run Job: ', name)
+  log.info('execute Job name: ', name)
 
   const [operation] = await runClient.runJob({ name })
   const [response] = await operation.promise()
