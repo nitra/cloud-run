@@ -20,6 +20,6 @@
   "license": "MIT",
   "dependencies": {
     "@google-cloud/run": "^0.4.2",
-    "@nitra/gcp-metadata": "^1.0.2"
+    "@nitra/gcp-metadata": "^1.1.0"
   }
 }

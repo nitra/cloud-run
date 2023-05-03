@@ -260,7 +260,7 @@ __metadata:
   resolution: "@nitra/cloud-run@workspace:npm"
   dependencies:
     "@google-cloud/run": ^0.4.2
-    "@nitra/gcp-metadata": ^1.0.2
+    "@nitra/gcp-metadata": ^1.1.0
   languageName: unknown
   linkType: soft
 
@@ -289,12 +289,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nitra/gcp-metadata@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "@nitra/gcp-metadata@npm:1.0.2"
+"@nitra/gcp-metadata@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@nitra/gcp-metadata@npm:1.1.0"
   dependencies:
     gcp-metadata: ^5.2.0
-  checksum: ef436bd8a66900f270309fca4c7693110be0d7d5014d9b1060ef7fde5fbbfb75d5aff9a6dbedca68da7f1ff0b40b67e7aeba68bed77965527ebf04d9c9204c91
+  checksum: e8a99bfba119ca691d5b12154dafa91bcfdb275b0fdc6994473833322410dc758e2bad2799df2150f13abe9e9602197d0e1b1f88f28de4ff86da4550f4c5f610
   languageName: node
   linkType: hard
 
