@@ -1,12 +1,16 @@
 {
   "name": "@nitra/cloud-run",
   "description": "cloud-run helper",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "type": "module",
   "main": "src/index.js",
   "files": [
     "src"
   ],
+  "exports": {
+    ".": "./src/index.js",
+    "./shell": "./src/shell.js"
+  },
   "keywords": [
     "nitra",
     "cloud-run"
