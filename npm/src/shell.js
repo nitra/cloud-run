@@ -21,9 +21,7 @@ export async function updateJob(jobName, log, env = [], taskCount = 1) {
   }
 
   const { stdout, stderr } = await execPromise(`gcloud run jobs update ${jobName} \
-  --tasks ${taskCount} \
-  ${envString}
-  --region ${region}`)
+  --tasks ${taskCount} --region ${region} ${envString}`)
 
   log.debug('updateJob: ', stdout, stderr)
 }
