@@ -17,7 +17,7 @@ export async function updateJob(jobName, log, env = [], taskCount = 1) {
   let envString = ''
   // Оновлюємо ENV
   for (const { key, value } of env) {
-    envString += `--set-env-vars ${key}=${value} `
+    envString += `--update-env-vars ${key}=${value} `
   }
 
   const { stdout, stderr } = await execPromise(`gcloud run jobs update ${jobName} \
