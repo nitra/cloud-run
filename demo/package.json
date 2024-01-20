@@ -15,9 +15,6 @@
     "@nitra/bunyan": "^1.3.0",
     "@nitra/cloud-run": "workspace:^"
   },
-  "devDependencies": {
-    "@nitra/eslint-config": "^1.0.22"
-  },
   "eslintConfig": {
     "extends": [
       "@nitra/eslint-config/node"
