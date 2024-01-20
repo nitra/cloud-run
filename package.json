@@ -7,6 +7,10 @@
     "demo",
     "npm"
   ],
+  "scripts": {
+    "d.ts": "cd npm && npx -p typescript tsc src/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types --skipLibCheck",
+    "fix": "npx eslint --fix . && npx prettier --write . "
+  },
   "bugs": "https://github.com/nitra/cloud-run/issues",
   "homepage": "https://github.com/nitra/cloud-run",
   "prettier": "@nitra/prettier-config",
@@ -17,10 +21,10 @@
     "root": true
   },
   "devDependencies": {
-    "@nitra/cspell-dict": "^1.0.70",
-    "@nitra/eslint-config": "^1.0.24",
+    "@nitra/cspell-dict": "^1.0.118",
+    "@nitra/eslint-config": "^1.0.39",
     "@nitra/prettier-config": "^1.0.1"
   },
   "license": "MIT",
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@4.0.2"
 }
