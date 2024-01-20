@@ -2,8 +2,9 @@ import { exec } from 'node:child_process'
 import { promisify } from 'node:util'
 import { getRegion } from '@nitra/gcp-metadata'
 
-const region = await getRegion()
-const execPromise = promisify(exec)
+export const region = await getRegion()
+export const execPromise = promisify(exec)
+
 /**
  * Оновлює job
  *
