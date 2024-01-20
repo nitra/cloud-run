@@ -13,7 +13,13 @@ const execPromise = promisify(exec)
  * @param {Number} taskCount - кількість задач
  *
  */
-export async function updateJob(jobName, log, env = [], taskCount = 1) {
+export async function updateJob(jobName, log, env = [], taskCount = 1, parallelism = 0) {
+
+  // Якщо не задано паралелізм, то використовуємо кількість задач
+  if(parallelism === 0) {
+    parallelism = taskCount
+  }
+
   let envString = ''
   // Оновлюємо ENV
   for (const { key, value } of env) {
@@ -21,7 +27,7 @@ export async function updateJob(jobName, log, env = [], taskCount = 1) {
   }
 
   const { stdout, stderr } = await execPromise(`gcloud run jobs update ${jobName} \
-  --tasks ${taskCount} --region ${region} ${envString}`)
+  --tasks ${taskCount} --parallelism ${parallelism} --region ${region} ${envString}`)
 
   log.debug('updateJob: ', stdout, stderr)
 }
